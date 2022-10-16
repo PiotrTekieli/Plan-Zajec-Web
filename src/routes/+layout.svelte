@@ -26,6 +26,7 @@
         height: calc(100vh - 5em);
         width: 300px;
         box-shadow: -8px 0px 4px 12px #0004;
+        flex-shrink: 0;
     }
 
     .content {
