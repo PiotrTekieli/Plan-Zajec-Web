@@ -37,11 +37,11 @@
     }
 
     .button:hover {
-        background-color: #160E4A20;
+        background-color: rgba(var(--mainColorRGB), 0.1);
     }
 
     .button:active {
-        background-color: #160E4A40;
+        background-color: rgba(var(--mainColorRGB), 0.2);
     }
 </style>
 
