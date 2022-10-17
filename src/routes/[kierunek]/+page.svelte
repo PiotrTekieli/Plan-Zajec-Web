@@ -7,14 +7,15 @@
 
 </script>
 
-<div class="p-4 w-100">
+
+
+<div class="px-5 py-4 w-100">
     {#if !data.data}
     Proszę wybirać wydział z menu po lewej stronie.
     {:else}
 
 
       <h5>Harmonogramy</h5>
-
       {#each data.data as elementData}
         <ListElement data={elementData}></ListElement>
       {/each}
