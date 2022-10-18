@@ -1,6 +1,11 @@
 <script>
+	import Star from "./Star.svelte";
+
+
     /** @type {{ name: String; spec: Array<String> }} */
     export let data
+    /** @type {Boolean} */
+    export let favorite = false
 
     console.log(data.spec)
 </script>
@@ -27,7 +32,7 @@
 
     span {
         display: inline-block;
-        white-space: pre
+        white-space: nowrap
     }
 
     .links {
@@ -37,6 +42,7 @@
 
 <div>
     <span>
+        <Star active={favorite}></Star>
         {data.name}
     </span>
     <span class="links">
