@@ -5,6 +5,13 @@
   /** @type {import('./$types').PageData} */
   export let data
 
+  /** @type {Array<any>}*/
+  let pageData
+
+  if (data.data) {
+    let searchTerm = ""
+    pageData = data.data.filter(item => item.name.includes(searchTerm) || item.spec.some(item => item.includes(searchTerm)))
+  }
 </script>
 
 
@@ -16,7 +23,7 @@
 
 
       <h5>Harmonogramy</h5>
-      {#each data.data as elementData, i}
+      {#each pageData as elementData, i}
         <ListElement data={elementData}></ListElement>
       {/each}
 
