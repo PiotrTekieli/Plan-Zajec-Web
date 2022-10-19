@@ -9,9 +9,11 @@
 		%sveltekit.head%
 
 		<style>
-			html {
-				--mainColor: #160E4A;
+			body {
+				--mainColorRGB: 22, 14, 74;
+				--mainColor: rgb(var(--mainColorRGB));
 				font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+				min-width: max-content;
 			}
 		</style>
 	</head>
