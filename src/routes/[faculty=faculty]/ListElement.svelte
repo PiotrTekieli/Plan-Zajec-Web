@@ -47,7 +47,7 @@
     </span>
     <span class="links">
         {#each data.spec as link, i}
-            <a href="/#">{link}</a>
+            <a href={"/" + /^[a-z\dąęóśżźćńł]+/i.exec(link)}>{link}</a>
             {#if data.spec.length-1 != i}{@html " | "}{/if}
         {/each}
     </span>

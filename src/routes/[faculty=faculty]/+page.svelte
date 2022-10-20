@@ -21,6 +21,7 @@
       Proszę wybirać wydział z menu po lewej stronie.
     {:else}
 
+      <h3>{data.faculty}</h3>
 
       <h5>Harmonogramy</h5>
       {#each pageData as elementData, i}
