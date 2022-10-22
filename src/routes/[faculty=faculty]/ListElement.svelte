@@ -6,8 +6,6 @@
     export let data
     /** @type {Boolean} */
     export let favorite = false
-
-    console.log(data.spec)
 </script>
 
 <style>

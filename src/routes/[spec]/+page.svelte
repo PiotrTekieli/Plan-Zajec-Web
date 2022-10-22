@@ -1,24 +1,42 @@
 <script>
+	import ScheduleTable from './ScheduleTable.svelte';
+
+
     /** @type {import('./$types').PageData} */
     export let data
 
     console.log(data.schedule)
     // @ts-ignore
     let groups = data.schedule.groups
+
+
+
+    /** @type {HTMLSelectElement} */
+    let selectElement
+    function SubmitWeek() {
+        console.log(selectElement.value)
+    }
 </script>
 
 
 
 <div class="px-5 py-4 mb-5 w-100">
     <h3>{data.spec}</h3>
+    <br>
 
-    {groups[0].name}
-    <table>
-        <tr>
-            <td>Poniedziałek {groups[0].days[0].date}</td>
-        </tr>
-        <tr>
-            <td>{groups[0].days[0].schedule[0].teacher}</td>
-        </tr>
-    </table>
+    <select on:change={() => SubmitWeek()} bind:this={selectElement}>
+        <option value=1>Test 1</option>
+        <option value=2>Test 2</option>
+    </select>
+
+    <div class="schedules">
+        <ScheduleTable data={groups}></ScheduleTable>
+        <ScheduleTable data={groups}></ScheduleTable>
+    </div>
 </div>
+
+<style>
+    .schedules {
+        display: flex;
+    }
+</style>
