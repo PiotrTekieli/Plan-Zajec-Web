@@ -37,11 +37,14 @@
 
     <button class="btn btn-secondary">Cały Semestr</button>
 
-    <select>
-        {#each data.schedule.groups as group}
-            <option value={group.name}>{group.name}</option>
-        {/each}
-    </select>
+    {#if data.schedule.groups.length > 1}
+        <select>
+            {#each data.schedule.groups as group}
+                <option value={group.name}>{group.name}</option>
+            {/each}
+                <option value="all">Wszystkie grupy</option>
+        </select>
+    {/if}
 
     <div class="schedules">
         <Legend data={data.schedule.legend}></Legend>
