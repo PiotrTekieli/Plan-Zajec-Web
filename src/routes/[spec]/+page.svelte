@@ -1,4 +1,5 @@
 <script>
+	import { schedule_update } from 'svelte/internal';
     import Legend from './Legend.svelte';
 	import ScheduleTable from './ScheduleTable.svelte';
 
@@ -26,9 +27,20 @@
     <h3>{data.spec}</h3>
     <br>
 
+    <button class="btn btn-secondary">&lt;</button>
     <select on:change={() => SubmitWeek()} bind:this={selectElement}>
-        <option value=1>Test 1</option>
-        <option value=2>Test 2</option>
+        <option value=1>Tydzień 1 (2022-01-01 - 2022-01-07)</option>
+        <option value=2>Tydzień 1 (2022-01-08 - 2022-01-14)</option>
+    </select>
+    <button class="btn btn-secondary">&gt;</button>
+
+
+    <button class="btn btn-secondary">Cały Semestr</button>
+
+    <select>
+        {#each data.schedule.groups as group}
+            <option value={group.name}>{group.name}</option>
+        {/each}
     </select>
 
     <div class="schedules">
