@@ -1,4 +1,5 @@
 <script>
+    import Legend from './Legend.svelte';
 	import ScheduleTable from './ScheduleTable.svelte';
 
 
@@ -8,6 +9,7 @@
     console.log(data.schedule)
     // @ts-ignore
     let groups = data.schedule.groups
+    groups = groups.slice(0,1)
 
 
 
@@ -30,8 +32,8 @@
     </select>
 
     <div class="schedules">
-        <ScheduleTable data={groups}></ScheduleTable>
-        <ScheduleTable data={groups}></ScheduleTable>
+        <Legend data={data.schedule.legend}></Legend>
+        <ScheduleTable data={groups} legend={data.schedule.legend}></ScheduleTable>
     </div>
 </div>
 

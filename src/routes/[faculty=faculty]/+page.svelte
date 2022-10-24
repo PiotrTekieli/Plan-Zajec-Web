@@ -20,7 +20,7 @@
 <div class="px-5 py-4 mb-5 w-100">
 
     {#if !data.data}
-      Proszę wybirać wydział z menu po lewej stronie.
+      Proszę wybrać wydział z menu po lewej stronie.
     {:else}
       <h3>{data.faculty}</h3>
 
