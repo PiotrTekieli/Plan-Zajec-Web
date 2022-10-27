@@ -40,7 +40,7 @@
 
 <div>
     <span>
-        <Star active={favorite}></Star>
+        <Star active={favorite} name={data.name} on:favorite></Star>
         {data.name}
     </span>
     <span class="links">
