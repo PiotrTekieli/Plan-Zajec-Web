@@ -1,0 +1,644 @@
+{
+    "groups": [
+      {
+        "name": "s3GK1",
+        "days": [
+          {
+            "date": "2022-10-17",
+            "schedule": [
+              {
+                "subject": "Mgod3 (wyk)",
+                "teacher": "dr Aleksander Klosow",
+                "classroom": "Online_19"
+              },
+              {
+                "subject": "Sd (sem)",
+                "teacher": "dr Aleksander Klosow",
+                "classroom": "Online_19"
+              },
+              {
+                "subject": "-",
+                "teacher": "-",
+                "classroom": "-"
+              },
+              {
+                "subject": "Mgod3 (lab)",
+                "teacher": "dr Aleksander Klosow",
+                "classroom": "C311"
+              },
+              {
+                "subject": "Tmisw (lab)",
+                "teacher": "mgr inż. Jan Duda",
+                "classroom": "D16"
+              },
+              {
+                "subject": "Tmisw (lab)",
+                "teacher": "mgr inż. Jan Duda",
+                "classroom": "D16"
+              },
+              {
+                "subject": "Msi (lab)",
+                "teacher": "mgr inż. Krystian Sadowski",
+                "classroom": "A218"
+              }
+            ]
+          },
+          {
+            "date": "2022-10-18",
+            "schedule": [
+              {
+                "subject": "-",
+                "teacher": "-",
+                "classroom": "-"
+              },
+              {
+                "subject": "Mgod3 (lab)",
+                "teacher": "dr Aleksander Klosow",
+                "classroom": "C311"
+              },
+              {
+                "subject": "Tmisw (lab)",
+                "teacher": "mgr inż. Jan Duda",
+                "classroom": "D16"
+              },
+              {
+                "subject": "-",
+                "teacher": "-",
+                "classroom": "-"
+              },
+              {
+                "subject": "-",
+                "teacher": "-",
+                "classroom": "-"
+              },
+              {
+                "subject": "-",
+                "teacher": "-",
+                "classroom": "-"
+              },
+              {
+                "subject": "-",
+                "teacher": "-",
+                "classroom": "-"
+              }
+            ]
+          },
+          {
+            "date": "2022-10-19",
+            "schedule": [
+              {
+                "subject": "-",
+                "teacher": "-",
+                "classroom": "-"
+              },
+              {
+                "subject": "-",
+                "teacher": "-",
+                "classroom": "-"
+              },
+              {
+                "subject": "-",
+                "teacher": "-",
+                "classroom": "-"
+              },
+              {
+                "subject": "-",
+                "teacher": "-",
+                "classroom": "-"
+              },
+              {
+                "subject": "Sd (sem)",
+                "teacher": "dr Aleksander Klosow",
+                "classroom": "Online_19"
+              },
+              {
+                "subject": "Sd (sem)",
+                "teacher": "dr Aleksander Klosow",
+                "classroom": "Online_19"
+              },
+              {
+                "subject": "-",
+                "teacher": "-",
+                "classroom": "-"
+              }
+            ]
+          },
+          {
+            "date": "2022-10-20",
+            "schedule": [
+              {
+                "subject": "Mgod3 (wyk)",
+                "teacher": "dr Aleksander Klosow",
+                "classroom": "Online_19"
+              },
+              {
+                "subject": "Sd (sem)",
+                "teacher": "dr Aleksander Klosow",
+                "classroom": "Online_19"
+              },
+              {
+                "subject": "-",
+                "teacher": "-",
+                "classroom": "-"
+              },
+              {
+                "subject": "Mgod3 (lab)",
+                "teacher": "dr Aleksander Klosow",
+                "classroom": "C311"
+              },
+              {
+                "subject": "Tmisw (lab)",
+                "teacher": "mgr inż. Jan Duda",
+                "classroom": "D16"
+              },
+              {
+                "subject": "Tmisw (lab)",
+                "teacher": "mgr inż. Jan Duda",
+                "classroom": "D16"
+              },
+              {
+                "subject": "Msi (lab)",
+                "teacher": "mgr inż. Krystian Sadowski",
+                "classroom": "A218"
+              }
+            ]
+          },
+          {
+            "date": "2022-10-21",
+            "schedule": [
+              {
+                "subject": "-",
+                "teacher": "-",
+                "classroom": "-"
+              },
+              {
+                "subject": "Mgod3 (lab)",
+                "teacher": "dr Aleksander Klosow",
+                "classroom": "C311"
+              },
+              {
+                "subject": "Tmisw (lab)",
+                "teacher": "mgr inż. Jan Duda",
+                "classroom": "D16"
+              },
+              {
+                "subject": "-",
+                "teacher": "-",
+                "classroom": "-"
+              },
+              {
+                "subject": "-",
+                "teacher": "-",
+                "classroom": "-"
+              },
+              {
+                "subject": "-",
+                "teacher": "-",
+                "classroom": "-"
+              },
+              {
+                "subject": "-",
+                "teacher": "-",
+                "classroom": "-"
+              }
+            ]
+          },
+          {
+            "date": "2022-10-22",
+            "schedule": [
+              {
+                "subject": "-",
+                "teacher": "-",
+                "classroom": "-"
+              },
+              {
+                "subject": "-",
+                "teacher": "-",
+                "classroom": "-"
+              },
+              {
+                "subject": "-",
+                "teacher": "-",
+                "classroom": "-"
+              },
+              {
+                "subject": "-",
+                "teacher": "-",
+                "classroom": "-"
+              },
+              {
+                "subject": "-",
+                "teacher": "-",
+                "classroom": "-"
+              },
+              {
+                "subject": "-",
+                "teacher": "-",
+                "classroom": "-"
+              },
+              {
+                "subject": "-",
+                "teacher": "-",
+                "classroom": "-"
+              }
+            ]
+          },
+          {
+            "date": "2022-10-23",
+            "schedule": [
+              {
+                "subject": "-",
+                "teacher": "-",
+                "classroom": "-"
+              },
+              {
+                "subject": "-",
+                "teacher": "-",
+                "classroom": "-"
+              },
+              {
+                "subject": "-",
+                "teacher": "-",
+                "classroom": "-"
+              },
+              {
+                "subject": "-",
+                "teacher": "-",
+                "classroom": "-"
+              },
+              {
+                "subject": "-",
+                "teacher": "-",
+                "classroom": "-"
+              },
+              {
+                "subject": "-",
+                "teacher": "-",
+                "classroom": "-"
+              },
+              {
+                "subject": "-",
+                "teacher": "-",
+                "classroom": "-"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "s3GK2",
+        "days": [
+          {
+            "date": "2022-10-17",
+            "schedule": [
+              {
+                "subject": "Mgod3 (wyk)",
+                "teacher": "dr Aleksander Klosow",
+                "classroom": "Online_19"
+              },
+              {
+                "subject": "Sd (sem)",
+                "teacher": "dr Aleksander Klosow",
+                "classroom": "Online_19"
+              },
+              {
+                "subject": "-",
+                "teacher": "-",
+                "classroom": "-"
+              },
+              {
+                "subject": "Mgod3 (lab)",
+                "teacher": "dr Aleksander Klosow",
+                "classroom": "C311"
+              },
+              {
+                "subject": "Tmisw (lab)",
+                "teacher": "mgr inż. Jan Duda",
+                "classroom": "D16"
+              },
+              {
+                "subject": "Tmisw (lab)",
+                "teacher": "mgr inż. Jan Duda",
+                "classroom": "D16"
+              },
+              {
+                "subject": "Msi (lab)",
+                "teacher": "mgr inż. Krystian Sadowski",
+                "classroom": "A218"
+              }
+            ]
+          },
+          {
+            "date": "2022-10-18",
+            "schedule": [
+              {
+                "subject": "-",
+                "teacher": "-",
+                "classroom": "-"
+              },
+              {
+                "subject": "Mgod3 (lab)",
+                "teacher": "dr Aleksander Klosow",
+                "classroom": "C311"
+              },
+              {
+                "subject": "Tmisw (lab)",
+                "teacher": "mgr inż. Jan Duda",
+                "classroom": "D16"
+              },
+              {
+                "subject": "-",
+                "teacher": "-",
+                "classroom": "-"
+              },
+              {
+                "subject": "-",
+                "teacher": "-",
+                "classroom": "-"
+              },
+              {
+                "subject": "-",
+                "teacher": "-",
+                "classroom": "-"
+              },
+              {
+                "subject": "-",
+                "teacher": "-",
+                "classroom": "-"
+              }
+            ]
+          },
+          {
+            "date": "2022-10-19",
+            "schedule": [
+              {
+                "subject": "-",
+                "teacher": "-",
+                "classroom": "-"
+              },
+              {
+                "subject": "-",
+                "teacher": "-",
+                "classroom": "-"
+              },
+              {
+                "subject": "-",
+                "teacher": "-",
+                "classroom": "-"
+              },
+              {
+                "subject": "-",
+                "teacher": "-",
+                "classroom": "-"
+              },
+              {
+                "subject": "Sd (sem)",
+                "teacher": "dr Aleksander Klosow",
+                "classroom": "Online_19"
+              },
+              {
+                "subject": "Sd (sem)",
+                "teacher": "dr Aleksander Klosow",
+                "classroom": "Online_19"
+              },
+              {
+                "subject": "-",
+                "teacher": "-",
+                "classroom": "-"
+              }
+            ]
+          },
+          {
+            "date": "2022-10-20",
+            "schedule": [
+              {
+                "subject": "Mgod3 (wyk)",
+                "teacher": "dr Aleksander Klosow",
+                "classroom": "Online_19"
+              },
+              {
+                "subject": "Sd (sem)",
+                "teacher": "dr Aleksander Klosow",
+                "classroom": "Online_19"
+              },
+              {
+                "subject": "-",
+                "teacher": "-",
+                "classroom": "-"
+              },
+              {
+                "subject": "Mgod3 (lab)",
+                "teacher": "dr Aleksander Klosow",
+                "classroom": "C311"
+              },
+              {
+                "subject": "Tmisw (lab)",
+                "teacher": "mgr inż. Jan Duda",
+                "classroom": "D16"
+              },
+              {
+                "subject": "Tmisw (lab)",
+                "teacher": "mgr inż. Jan Duda",
+                "classroom": "D16"
+              },
+              {
+                "subject": "Msi (lab)",
+                "teacher": "mgr inż. Krystian Sadowski",
+                "classroom": "A218"
+              }
+            ]
+          },
+          {
+            "date": "2022-10-21",
+            "schedule": [
+              {
+                "subject": "-",
+                "teacher": "-",
+                "classroom": "-"
+              },
+              {
+                "subject": "Mgod3 (lab)",
+                "teacher": "dr Aleksander Klosow",
+                "classroom": "C311"
+              },
+              {
+                "subject": "Tmisw (lab)",
+                "teacher": "mgr inż. Jan Duda",
+                "classroom": "D16"
+              },
+              {
+                "subject": "-",
+                "teacher": "-",
+                "classroom": "-"
+              },
+              {
+                "subject": "-",
+                "teacher": "-",
+                "classroom": "-"
+              },
+              {
+                "subject": "-",
+                "teacher": "-",
+                "classroom": "-"
+              },
+              {
+                "subject": "-",
+                "teacher": "-",
+                "classroom": "-"
+              }
+            ]
+          },
+          {
+            "date": "2022-10-22",
+            "schedule": [
+              {
+                "subject": "-",
+                "teacher": "-",
+                "classroom": "-"
+              },
+              {
+                "subject": "-",
+                "teacher": "-",
+                "classroom": "-"
+              },
+              {
+                "subject": "-",
+                "teacher": "-",
+                "classroom": "-"
+              },
+              {
+                "subject": "-",
+                "teacher": "-",
+                "classroom": "-"
+              },
+              {
+                "subject": "-",
+                "teacher": "-",
+                "classroom": "-"
+              },
+              {
+                "subject": "-",
+                "teacher": "-",
+                "classroom": "-"
+              },
+              {
+                "subject": "-",
+                "teacher": "-",
+                "classroom": "-"
+              }
+            ]
+          },
+          {
+            "date": "2022-10-23",
+            "schedule": [
+              {
+                "subject": "-",
+                "teacher": "-",
+                "classroom": "-"
+              },
+              {
+                "subject": "-",
+                "teacher": "-",
+                "classroom": "-"
+              },
+              {
+                "subject": "-",
+                "teacher": "-",
+                "classroom": "-"
+              },
+              {
+                "subject": "-",
+                "teacher": "-",
+                "classroom": "-"
+              },
+              {
+                "subject": "-",
+                "teacher": "-",
+                "classroom": "-"
+              },
+              {
+                "subject": "-",
+                "teacher": "-",
+                "classroom": "-"
+              },
+              {
+                "subject": "-",
+                "teacher": "-",
+                "classroom": "-"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "legend": [
+      {
+        "subject": "Mgod3",
+        "name": "Modelowanie graficzne oraz druk 3D"
+      },
+      {
+        "subject": "Tmisw",
+        "name": "Techniki mikroprocesorowe i systemy wbudowane"
+      },
+      {
+        "subject": "Msi",
+        "name": "Metody sztucznej inteligencji"
+      },
+      {
+        "subject": "Piwsi",
+        "name": "Projektowanie i wdrażanie systemów informatycznych"
+      },
+      {
+        "subject": "Pw",
+        "name": "Przedmiot wybieralny"
+      },
+      {
+        "subject": "PgiD",
+        "name": "Programy graficzne i DTP"
+      },
+      {
+        "subject": "Cmiopm",
+        "name": "Cyfrowy montaż i obróbka plików multimedialnych"
+      },
+      {
+        "subject": "Sm",
+        "name": "Systemy mobilne"
+      },
+      {
+        "subject": "Sd",
+        "name": "Seminarium dyplomowe"
+      }
+    ],
+    "secondaryLegends": [
+      {
+        "name": "Legenda1",
+        "items": [
+          {
+            "subject": "Ja",
+            "teacher": "mgr Filip Kostek",
+            "classroom": "C324"
+          },
+          {
+            "subject": "Ja",
+            "teacher": "mgr Gabriela Lisowska",
+            "classroom": "C325"
+          }
+        ]
+      },
+      {
+        "name": "Legenda2",
+        "items": [
+          {
+            "subject": "Ja",
+            "teacher": "mgr Filip Kostek",
+            "classroom": "C324"
+          },
+          {
+            "subject": "Ja",
+            "teacher": "mgr Gabriela Lisowska",
+            "classroom": "C325"
+          }
+        ]
+      }
+    ]
+  }

@@ -61,8 +61,20 @@
         background-color: rgba(var(--mainColorRGB), 0.2);
     }
 
+    .active {
+        background-color: rgba(var(--mainColorRGB), 0.1);
+    }
+
+    .active:hover {
+        background-color: rgba(var(--mainColorRGB), 0.2);
+    }
 
 </style>
+
+<script>
+    /** @type {import('./$types').LayoutData} */
+    export let data
+</script>
 
 <div class="headerBackground"></div>
 
@@ -76,9 +88,9 @@
 <div class="content">
     <div class="sidebar">
         <div class="sidebarContent">
-            <a href="/wa"><button class="btn button">Wydział Nauk o Zdrowiu i Kulturze Fizycznej</button></a>
-            <a href="/wzi"><button class="btn button">Wydział Nauk Technicznych i Ekonomicznych</button></a>
-            <a href="/wm"><button class="btn button">Wydział Nauk Społecznych i Humanistycznych</button></a>
+            <a href="/wa"><button class="btn button" class:active={data.faculty == 'wa'}>Wydział Nauk o Zdrowiu i Kulturze Fizycznej</button></a>
+            <a href="/wzi"><button class="btn button" class:active={data.faculty == 'wzi'}>Wydział Nauk Technicznych i Ekonomicznych</button></a>
+            <a href="/wm"><button class="btn button" class:active={data.faculty == 'wm'}>Wydział Nauk Społecznych i Humanistycznych</button></a>
         </div>
     </div>
 
