@@ -17,8 +17,15 @@ export function load({params}) {
             break
     }
 
+    /** @type {string[] | null} */
+    let favoriteList = null
+    if (typeof window !== 'undefined') {
+        favoriteList = JSON.parse(localStorage.getItem('favoriteList') ?? "")
+    }
+
     return {
         faculty: faculty,
-        data: params.faculty == "wzi" ? wzi.course : null
+        data: params.faculty == "wzi" ? wzi.course : null,
+        favoriteList: favoriteList
     };
 }

@@ -1,6 +1,11 @@
 <script>
+    import { createEventDispatcher } from 'svelte';
+    const dispatch = createEventDispatcher();
+
     /** @type {Boolean} */
     export let active
+    /** @type {String} */
+    export let name
 
     let fill = ""
     let stroke = ""
@@ -9,7 +14,32 @@
 
     function Favorite() {
         active = !active
+
+        /** @type {Array<String> | null} */
+        let favoriteList
+
+        try {
+            favoriteList = JSON.parse(localStorage.getItem('favoriteList') ?? "")
+        }
+        catch (error) {
+            favoriteList = null
+        }
+        if (!favoriteList)
+            favoriteList = []
+
+
+        if (active)
+            favoriteList.push(name)
+        else
+            favoriteList.splice(favoriteList.indexOf(name), 1)
+
+
+        localStorage.setItem('favoriteList', JSON.stringify(favoriteList))
+
         UpdateColor()
+        dispatch('favorite', {
+			name: name
+		});
     }
 
     function UpdateColor() {
