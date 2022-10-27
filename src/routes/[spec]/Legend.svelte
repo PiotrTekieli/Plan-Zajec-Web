@@ -1,8 +1,8 @@
 <script>
-	import { element } from "svelte/internal";
-
     /** @type {Array<any>} */
     export let data
+    /** @type {Array<any>} */
+    export let secondaryLegends = []
 
     /** @param {String} dateString */
     function getDay(dateString) {
@@ -51,7 +51,6 @@
     function checkTodaysDate(dateString) {
         return new Date(dateString).toDateString() == new Date().toDateString()
     }
-
 </script>
 
 <link href="./table.css">
@@ -64,12 +63,36 @@
         </tr>
 
         {#each data as element}
-            <tr>
-                <td>{element.subject}</td>
-                <td>{element.name}</td>
-            </tr>
+        <tr>
+            <td>{element.subject}</td>
+            <td>{element.name}</td>
+        </tr>
         {/each}
     </table>
+
+    <span>Informacja "1h [x/-]" lub "1h [-/x]" oznacza, że zajęcią trwają w tym bloku 45 minut i zaplanowane są odpowiednio w pierwszej lub drugiej jego połowie.</span>
+
+    {#if secondaryLegends.length}
+        {#each secondaryLegends as legend}
+            <h5>{legend.name}</h5>
+            <table>
+                <tr>
+                    <th>Przedmiot</th>
+                    <th>Nauczyciel</th>
+                    <th>Sala</th>
+                </tr>
+
+                {#each legend.items as element}
+                    <tr>
+                        <td>{element.subject}</td>
+                        <td>{element.teacher}</td>
+                        <td>{element.classroom}</td>
+                    </tr>
+                {/each}
+
+            </table>
+        {/each}
+    {/if}
 </div>
 
 <style>
@@ -82,7 +105,6 @@
     table {
         width: 100%;
         border: 1px solid rgba(var(--mainColorRGB), 0.5);
-        float: left;
     }
 
     table td, table th {
@@ -98,6 +120,15 @@
 
     table tr:hover {
         background-color: rgba(var(--mainColorRGB), 0.1);
+    }
+
+    h5 {
+        margin-top: 12px;
+    }
+
+    span {
+        margin: 16px 0px;
+        display: block;
     }
 
 </style>

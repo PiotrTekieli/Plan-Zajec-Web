@@ -608,5 +608,37 @@
         "subject": "Sd",
         "name": "Seminarium dyplomowe"
       }
+    ],
+    "secondaryLegends": [
+      {
+        "name": "Legenda1",
+        "items": [
+          {
+            "subject": "Ja",
+            "teacher": "mgr Filip Kostek",
+            "classroom": "C324"
+          },
+          {
+            "subject": "Ja",
+            "teacher": "mgr Gabriela Lisowska",
+            "classroom": "C325"
+          }
+        ]
+      },
+      {
+        "name": "Legenda2",
+        "items": [
+          {
+            "subject": "Ja",
+            "teacher": "mgr Filip Kostek",
+            "classroom": "C324"
+          },
+          {
+            "subject": "Ja",
+            "teacher": "mgr Gabriela Lisowska",
+            "classroom": "C325"
+          }
+        ]
+      }
     ]
   }
