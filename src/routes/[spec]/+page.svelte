@@ -70,7 +70,7 @@
     }
 
     .button {
-        /*border: 2px solid rgba(var(--mainColorRGB), 0.2);*/
+        border-radius: 0.1rem;
         background-color: var(--mainColor);
         color: white;
         transition: background-color .15s ease-in-out !important;
@@ -90,7 +90,7 @@
         margin: 0px 4px;
         border: 1px solid #000;
         transition: background-color .15s ease-in-out !important;
-        border-radius: 0.25rem;
+        border-radius: 0.1rem;
     }
 
     select:hover {

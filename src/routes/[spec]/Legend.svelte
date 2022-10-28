@@ -70,7 +70,7 @@
         {/each}
     </table>
 
-    <span>Informacja "1h [x/-]" lub "1h [-/x]" oznacza, że zajęcią trwają w tym bloku 45 minut i zaplanowane są odpowiednio w pierwszej lub drugiej jego połowie.</span>
+    <span>Informacja "1h [x/-]" lub "1h [-/x]" oznacza, że zajęcią trwają w tym bloku 45 minut i zaplanowane są odpowiednio w pierwszej lub drugiej jego połowie.</span>
 
     {#if secondaryLegends.length}
         {#each secondaryLegends as legend}
