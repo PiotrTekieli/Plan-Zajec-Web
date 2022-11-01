@@ -5,7 +5,7 @@
   export let data
 
   /** @type {Array<any>}*/
-  let pageData = data.data ?? []
+  let pageData = data.data
 
   let searchTerm = ""
 
@@ -30,7 +30,7 @@
       <div class="top">
         <h3>{data.faculty}</h3>
 
-        <input bind:value={searchTerm} on:input={() => SearchThrough(data.data ?? [])} placeholder="Wyszukaj..."/>
+        <input bind:value={searchTerm} on:input={() => SearchThrough(data.data)} placeholder="Wyszukaj..."/>
       </div>
 
       {#if pageData.length}
