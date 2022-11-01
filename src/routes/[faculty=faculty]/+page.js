@@ -1,4 +1,5 @@
 import wzi from "$lib/mockJsonWzi.json"
+import { error } from "@sveltejs/kit"
 
 /** @type {import('./$types').PageLoad} */
 export function load({params}) {
@@ -23,9 +24,12 @@ export function load({params}) {
         favoriteList = JSON.parse(localStorage.getItem('favoriteList') ?? "")
     }
 
+    if (params.faculty != "wzi")
+        throw error(404, "Not Found")
+
     return {
         faculty: faculty,
-        data: params.faculty == "wzi" ? wzi.course : null,
+        data: wzi.course,
         favoriteList: favoriteList
     };
 }
