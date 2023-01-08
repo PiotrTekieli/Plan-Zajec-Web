@@ -2,7 +2,7 @@
 	import Star from "./Star.svelte";
 
 
-    /** @type {{ name: String; spec: Array<String> }} */
+    /** @type {{ id: Number; name: String; specializations: [{id: Number, name: String}] }} */
     export let data
     /** @type {Boolean} */
     export let favorite = false
@@ -12,20 +12,13 @@
     div {
         background-color: rgba(var(--mainColorRGB), 0.1);
         width: 100%;
-        max-width: 1000px;
+        min-width: 850px;
+        max-width: 1200px;
         padding: 8px 16px;
         margin: 8px 0px;
         display:flex;
+        flex-wrap: wrap;
         justify-content: space-between;
-    }
-
-    a {
-        text-decoration: none;
-        color: #1786CA;
-    }
-
-    a:hover {
-        text-decoration: underline;
     }
 
     span {
@@ -34,7 +27,8 @@
     }
 
     .links {
-        margin-left: 1em;
+        margin-left: auto;
+        padding-left: 1em;
     }
 </style>
 
@@ -44,9 +38,9 @@
         {data.name}
     </span>
     <span class="links">
-        {#each data.spec as link, i}
-            <a href={"/" + /^[a-z\dąęóśżźćńł]+/i.exec(link)}>{link}</a>
-            {#if data.spec.length-1 != i}{@html " | "}{/if}
+        {#each data.specializations as spec, i}
+            <a href={"/spec/" + data.id + "/" + spec.id}>{spec.name}</a>
+            {#if data.specializations.length-1 != i}{@html " | "}{/if}
         {/each}
     </span>
 </div>

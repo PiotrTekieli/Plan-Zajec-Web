@@ -36,6 +36,8 @@
 
         localStorage.setItem('favoriteList', JSON.stringify(favoriteList))
 
+        console.log(active, favoriteList)
+
         UpdateColor()
         dispatch('favorite', {
 			name: name
@@ -58,6 +60,7 @@
 <style>
     button {
         border: none;
+        background-color: transparent;
     }
     button:hover {
         background-color: transparent;
