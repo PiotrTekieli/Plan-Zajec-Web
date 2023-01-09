@@ -57,12 +57,13 @@
     }
 
     table {
-        width: 100%;
+        width: 100% !important;
+        overflow-wrap: anywhere;
         border: 1px solid rgba(var(--mainColorRGB), 0.5);
     }
 
     table td, table th {
-        padding: 8px 12px;
+        padding: 8px 8px;
         border: 1px solid rgba(var(--mainColorRGB), 0.5);
         border-width: 1px 0px;
     }

@@ -1,5 +1,6 @@
 <script>
 	import { extractDate } from "$lib/DateHelper";
+	import { onMount } from "svelte/internal";
 	import Tooltip from "../../../Tooltip.svelte";
 
     /** @type {Array<any>} */
@@ -7,6 +8,20 @@
 
     /** @type {Array<any>} */
     export let legend
+
+    /** @type {HTMLDivElement} */
+    let mainTable
+
+    onMount(() => {
+        updateWidth()
+    })
+
+    $: data, updateWidth()
+
+    function updateWidth() {
+        if (mainTable)
+            mainTable.style.width = 500 * data.length + "px";
+    }
 
     /** @param {String} dateString */
     function checkTodaysDate(dateString) {
@@ -24,30 +39,42 @@
 </script>
 
 
-{#each data as group}
-    <div>
-        <h5>{group.name}</h5>
-        <table>
-            {#each group.schedule as day}
+<div bind:this={mainTable}>
+    {#if data.length > 1}
+        <h5>Harmonogram</h5>
+    {:else}
+        <h5>{data[0].name}</h5>
+    {/if}
+    <table>
+        {#each data[0].schedule as day, d}
+            <tr>
+                <th colspan={4 * data.length} class:today={checkTodaysDate(extractDate(day.day))}>{day.day}</th>
+            </tr>
+            {#if data.length > 1}
                 <tr>
-                    <th colspan="4" class:today={checkTodaysDate(extractDate(day.day))}>{day.day}</th>
+                    {#each data as group}
+                        <td colspan="4" class="groupName">{group.name}</td>
+                    {/each}
                 </tr>
-                {#each day.rows as row, i}
-                    <tr>
-                        <td class="timeColumn">{row[0]}</td>
-                        <td><Tooltip text={MatchLegend(row[1])}>{row[1]}</Tooltip></td>
-                        <td>{row[2]}</td>
-                        <td>{row[3]}</td>
-                    </tr>
-                {/each}
+            {/if}
+            <tr></tr>
+            {#each day.rows as row, r}
+                <tr>
+                    {#each data as group, g}
+                        <td class="timeColumn">{data[g].schedule[d].rows[r][0]}</td>
+                        <td><Tooltip text={MatchLegend(data[g].schedule[d].rows[r][1])}>{data[g].schedule[d].rows[r][1]}</Tooltip></td>
+                        <td>{data[g].schedule[d].rows[r][2]}</td>
+                        <td>{data[g].schedule[d].rows[r][3]}</td>
+                    {/each}
+                </tr>
             {/each}
-        </table>
-    </div>
-{/each}
+        {/each}
+    </table>
+</div>
 
 <style>
     div {
-        width: 700px;
+        width: 500px;
         margin-right: 12px;
     }
 
@@ -58,7 +85,7 @@
     }
 
     table td, table th {
-        padding: 8px 12px;
+        padding: 8px 8px;
         border: 1px solid rgba(var(--mainColorRGB), 0.5);
         border-width: 1px 0px;
         text-align: center;
@@ -71,6 +98,20 @@
 
     table tr:hover {
         background-color: rgba(var(--mainColorRGB), 0.1);
+    }
+
+    table td {
+        max-width: 200px;
+        min-width: 100px;
+    }
+
+    table td:nth-child(4n) {
+        border-right: black 1px solid;
+    }
+
+    table td.groupName {
+        font-weight: bold;
+        border-right: black 1px solid;
     }
 
     .today {

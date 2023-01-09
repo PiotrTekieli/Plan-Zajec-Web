@@ -53,7 +53,7 @@
 
 <style>
     div {
-        width: 700px;
+        width: 500px;
         margin-right: 12px;
     }
 
@@ -64,7 +64,7 @@
     }
 
     table td, table th {
-        padding: 8px 12px;
+        padding: 8px 8px;
         border: 1px solid rgba(var(--mainColorRGB), 0.5);
         border-width: 1px 0px;
         text-align: center;

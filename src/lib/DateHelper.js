@@ -21,6 +21,7 @@ export function getWeek(date) {
 
     let start = new Date(date)
     start.setDate(start.getDate() - ((start.getDay() + 6) % 7))
+
     let dateString = getDateString(start)
     start.setDate(start.getDate() + 6)
 
@@ -73,5 +74,6 @@ function checkIfSameDay(date1, date2) {
 }
 
 export function getDateString(date) {
+    date.setHours(12)
     return date.toISOString().replace(/T.*/,'')
 }

@@ -35,9 +35,9 @@
     .sidebar {
         position: sticky;
         top: 5em;
-        height: calc(100vh - 5em);
+        /* height: calc(100vh - 5em); */
         width: 300px;
-        box-shadow: -8px 0px 4px 12px #0004;
+        box-shadow: -8px -16px 4px 12px #0004;
         flex-shrink: 0;
     }
 
@@ -112,8 +112,20 @@
 </style>
 
 <script>
+	import { afterUpdate } from 'svelte';
+
+
     /** @type {import('./$types').LayoutData} */
     export let data
+
+    /** @type {HTMLDivElement} */
+    let sidebar
+
+    afterUpdate(() => {
+        var body = document.body,
+            html = document.documentElement;
+        sidebar.style.height = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight) + "px"
+    })
 </script>
 
 <div class="headerBackground"></div>
@@ -126,7 +138,7 @@
 </div>
 
 <div class="content">
-    <div class="sidebar">
+    <div class="sidebar" bind:this={sidebar}>
         <div class="sidebarContent">
             <a href="/wa"><button class="btn button" class:active={data.faculty == 'wa'}>Wydział Nauk o Zdrowiu i Kulturze Fizycznej</button></a>
             <a href="/wzi"><button class="btn button" class:active={data.faculty == 'wzi'}>Wydział Nauk Technicznych i Ekonomicznych</button></a>

@@ -99,6 +99,22 @@
         z-index: 1;
     }
 
+    button::before {
+        content: ' ';
+        background-image: url("/arrow2.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 0.3;
+        transform: rotate(90deg);
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        top: -2px;
+        right: 12px;
+        z-index: 2;
+    }
+
     a {
         text-decoration: none;
         color: #1786CA;
