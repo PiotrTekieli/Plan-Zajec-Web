@@ -29,13 +29,7 @@ export async function load({params}) {
             break
     }
 
-    console.log(facultyId)
-    // let pageData = params.faculty == "wzi" ? wzi.course : null
     let pageData = await axios.get(env.API_URL + "/faculties/" + facultyId + "/majors", { headers: {Authorization: "Bearer " + env.REMOTE_KEY}})
-
-
-    // if (params.faculty != "wzi")
-    //     throw error(404, "Not Found")
 
     return {
         facultyId: facultyId,
