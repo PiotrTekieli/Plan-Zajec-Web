@@ -37,6 +37,7 @@
         top: 5em;
         width: 280px;
         flex-shrink: 0;
+        min-height: 500px;
     }
 
     .sidebarContent {
@@ -52,6 +53,7 @@
         text-align: left;
         width: 100%;
         height: 65px;
+        border-radius: 0;
     }
 
     .button:hover {
