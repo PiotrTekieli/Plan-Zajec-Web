@@ -25,7 +25,11 @@
     /** @type {HTMLSelectElement} */
     let selectGroup
     function SubmitGroup() {
-        let groupIndex = Number.parseInt(selectGroup.value)
+        let groupIndex
+        if (selectGroup)
+            groupIndex = Number.parseInt(selectGroup.value)
+        else
+            groupIndex = 0
         if (groupIndex != -1) {
             groups = [JSON.parse(JSON.stringify(data.schedule.groups[groupIndex]))]
         } else {
