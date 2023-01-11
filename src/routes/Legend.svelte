@@ -11,7 +11,7 @@
 
 <div>
     <table>
-        <tr>
+        <tr style="overflow-wrap: normal">
             <th>Przedmiot</th>
             <th>Nazwa</th>
         </tr>
@@ -30,7 +30,7 @@
         {#each secondaryLegends as legend, i}
             <h5>{legend.name}</h5>
             <table>
-                <tr>
+                <tr style="overflow-wrap: normal">
                     <th>Przedmiot</th>
                     <th>Nauczyciel</th>
                     <th>Sala</th>
@@ -51,7 +51,7 @@
 
 <style>
     div {
-        width: 300px;
+        width: 325px;
         margin-top: 2em;
         margin-right: 12px;
     }
