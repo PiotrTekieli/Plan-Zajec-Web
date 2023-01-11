@@ -33,7 +33,7 @@
                 <tr style="overflow-wrap: normal">
                     <th>Przedmiot</th>
                     <th>Nauczyciel</th>
-                    <th>Sala</th>
+                    <th style="min-width: 55px">Sala</th>
                 </tr>
 
                 {#each legend.items as element}
